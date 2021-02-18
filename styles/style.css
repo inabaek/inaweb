@@ -3,7 +3,6 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: #f2f2f2;
   font-family: "Source Sans Pro", sans-serif;
 }
 
@@ -46,9 +45,10 @@ a {
   color: black;
 }
 
-.main-head {
-  width: 80%;
-  margin: auto;
+body {
+  background: #f2f2f2;
+  -webkit-animation: opening 1s ease-in-out;
+          animation: opening 1s ease-in-out;
 }
 
 nav {
@@ -68,6 +68,8 @@ nav {
   min-height: 20vh;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
 }
 
 nav .logo {
@@ -371,5 +373,201 @@ footer h5 {
         -ms-flex-direction: row;
             flex-direction: row;
   }
+}
+
+.website-divider {
+  width: 100%;
+  height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.website-divider h1 {
+  width: 80%;
+  margin: auto;
+  height: 20vh;
+  font-size: 8vw;
+  color: rgba(169, 169, 169, 0.233);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  color: rgba(96, 143, 145, 0.24);
+}
+
+.line {
+  position: relative;
+  width: 100%;
+  margin: auto;
+}
+
+.line-inside {
+  width: 80%;
+  margin-left: 10%;
+  border: 0.1px solid rgba(96, 143, 145, 0.24);
+  position: absolute;
+}
+
+.projects {
+  width: 80%;
+  margin: auto;
+  min-height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: center;
+  margin-top: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.projects h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-family: "arial", sans-serif;
+  font-weight: lighter;
+}
+
+.projects img {
+  width: 45rem;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.projects img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.jison-project,
+.elena-project {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 20rem;
+          flex: 1 1 20rem;
+}
+
+.branding {
+  width: 100%;
+  height: 20vh;
+}
+
+.branding-divider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.branding-divider h1 {
+  font-size: 10rem;
+  color: rgba(169, 169, 169, 0.233);
+}
+
+.form-section {
+  min-height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 3rem;
+}
+
+.form-section form {
+  padding: 3rem 10rem;
+  border: solid #07576c 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 2rem;
+}
+
+.form-section form input,
+.form-section form textarea {
+  background-color: #f44d28;
+  color: #f2f2f2;
+  margin: 2rem;
+  border: none;
+}
+
+.form-section form input:focus,
+.form-section form textarea:focus {
+  outline: 5px solid #07576c;
+}
+
+.form-section form textarea {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 2.5rem;
+}
+
+.form-section form button {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  background-color: #f44d28;
+  color: #f2f2f2;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.form-section form button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  background-color: #07576c;
+}
+
+.form-section form label {
+  color: #07576c;
 }
 /*# sourceMappingURL=style.css.map */

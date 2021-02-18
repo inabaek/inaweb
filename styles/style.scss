@@ -2,7 +2,8 @@ $header1: 2.5rem;
 $header2: 4rem;
 $header3: 2.5rem;
 $header4: 2rem;
-$header5: 1.2rem;
+$header5: 1.8rem;
+$header6: 1.2rem;
 $text: 2.5rem;
 $gradient: linear-gradient(left, #38d39f, #38a4d3);
 $background-color: #154353;
@@ -19,3 +20,5 @@ $font-family-source: "Source Sans Pro", sans-serif;
 
 @import "global";
 @import "intro";
+@import "portfolio";
+@import "contact";

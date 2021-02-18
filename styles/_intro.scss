@@ -1,12 +1,14 @@
-.main-head {
-  width: 80%;
-  margin: auto;
+body {
+  background: #f2f2f2;
+  animation: opening 1s ease-in-out;
 }
 
 nav {
   @include flex(space-between, center, row);
   min-height: 20vh;
   flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
   .logo {
     @include flex(flex-start, center, row);
     flex: 1 1 40rem;
@@ -88,7 +90,7 @@ footer {
   margin: auto;
   @include flex(justify-content, center, column);
   h5 {
-    font-size: $header5;
+    font-size: $header6;
     margin: 10rem 0 5rem 0;
   }
 }
