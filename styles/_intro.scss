@@ -58,6 +58,8 @@ nav {
   }
   h3 {
     margin-top: 1rem;
+    font-size: $header1;
+    font-weight: 500;
   }
 }
 
@@ -86,13 +88,19 @@ nav {
 }
 
 footer {
+  height: 10vh;
   width: 80%;
   margin: auto;
   @include flex(justify-content, center, column);
-  h5 {
-    font-size: $header6;
-    margin: 10rem 0 5rem 0;
+
+  img {
+    width: 25rem;
   }
+  //h5 {
+  //  font-size: $header6;
+  //  font-weight: lighter;
+  //  margin: 10rem 0 5rem 0;
+  //}
 }
 
 //keyframes//

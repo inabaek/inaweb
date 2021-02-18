@@ -10,10 +10,12 @@
 
     input,
     textarea {
-      background-color: #f44d28;
+      background-color: #ff6441;
       color: #f2f2f2;
       margin: 2rem;
+      padding: 1rem 2rem;
       border: none;
+      border-radius: 5px;
       &:focus {
         outline: 5px solid #07576c;
       }
@@ -26,17 +28,37 @@
       width: 100%;
       padding: 1rem;
       border: none;
-      background-color: #f44d28;
-      color: #f2f2f2;
+      background-color: #ff6441;
+      color: #07576c;
       transition: all 0.2s ease-in-out;
       cursor: pointer;
+      border-radius: 5px;
     }
     button:hover {
       transform: scale(1.05);
       background-color: #07576c;
+      color: #ff6441;
+      border-radius: 5px;
     }
     label {
       color: #07576c;
     }
   }
+}
+
+footer {
+  height: 10vh;
+  width: 80%;
+  margin: auto;
+  @include flex(justify-content, center, column);
+
+  img {
+    margin-top: 3.5rem;
+    width: 25rem;
+  }
+  //h5 {
+  //  font-size: $header6;
+  //  font-weight: lighter;
+  //  margin: 10rem 0 5rem 0;
+  //}
 }
