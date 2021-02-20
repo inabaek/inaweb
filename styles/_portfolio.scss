@@ -1,0 +1,121 @@
+.website-divider {
+  width: 100%;
+  height: 20vh;
+  @include flex(flex-end, center, column);
+
+  h1 {
+    width: 80%;
+    margin: auto;
+    height: 20vh;
+    font-size: 8vw;
+    color: rgba(169, 169, 169, 0.233);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: rgba(96, 143, 145, 0.24);
+  }
+}
+
+.line {
+  position: relative;
+  width: 100%;
+  margin: auto;
+}
+
+.line-inside {
+  width: 80%;
+  margin-left: 10%;
+  border: 0.01vw solid rgba(96, 143, 145, 0.24);
+  position: absolute;
+}
+
+.projects {
+  width: 80%;
+  margin: auto;
+  min-height: 60vh;
+  @include flex(center, center, row);
+  text-align: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  h2 {
+    margin: 1rem;
+    font-size: $header4;
+    font-family: "arial", sans-serif;
+    font-weight: 100;
+    color: rgb(68, 73, 73);
+  }
+  h3 {
+    margin-bottom: 2rem;
+    font-size: $header5;
+    font-family: "arial", sans-serif;
+    font-weight: 100;
+    color: rgb(68, 73, 73);
+  }
+
+  img {
+    margin-bottom: 5rem;
+    width: 45rem;
+    margin: 0 1rem 0 1rem;
+    transition: all 0.2s ease-in-out;
+  }
+  img:hover {
+    transform: scale(1.05);
+  }
+}
+
+.projects02 {
+  width: 80%;
+  margin: auto;
+  min-height: 40vh;
+  @include flex(center, center, row);
+  text-align: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  h2 {
+    margin: 1rem;
+    font-size: $header4;
+    font-family: "arial", sans-serif;
+    font-weight: 100;
+    color: rgb(68, 73, 73);
+  }
+  h3 {
+    margin-bottom: 2rem;
+    font-size: $header5;
+    font-family: "arial", sans-serif;
+    font-weight: 100;
+    color: rgb(68, 73, 73);
+  }
+  img {
+    margin-bottom: 5rem;
+    width: 45rem;
+    margin: 0 1rem 0 1rem;
+  }
+}
+
+.viewshop {
+  @include flex(center, flex-start, row);
+  button {
+    border: none;
+    background-color: #07576c;
+    color: #f2f2f2;
+    cursor: pointer;
+    margin: 3rem 0 10rem 0;
+    padding: 2rem 5rem;
+    transition: all 0.2s ease-in-out;
+  }
+  button:hover {
+    transform: scale(1.05);
+  }
+}
+
+.branding {
+  width: 100%;
+  height: 20vh;
+}
+.branding-divider {
+  @include flex(center, center, row);
+  h1 {
+    font-size: 10rem;
+    color: rgba(169, 169, 169, 0.233);
+  }
+}

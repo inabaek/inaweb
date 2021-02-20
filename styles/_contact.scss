@@ -1,0 +1,64 @@
+.form-section {
+  min-height: 80vh;
+  @include flex(center, center, row);
+  margin-top: 3rem;
+  form {
+    padding: 3rem 10rem;
+    border: solid #07576c 5px;
+    @include flex(center, center, column);
+    border-radius: 2rem;
+
+    input,
+    textarea {
+      background-color: #ff6441;
+      color: #f2f2f2;
+      margin: 2rem;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 5px;
+      &:focus {
+        outline: 5px solid #07576c;
+      }
+    }
+    textarea {
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 2.5rem;
+    }
+    button {
+      width: 100%;
+      padding: 1rem;
+      border: none;
+      background-color: #ff6441;
+      color: #07576c;
+      transition: all 0.2s ease-in-out;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    button:hover {
+      transform: scale(1.05);
+      background-color: #07576c;
+      color: #ff6441;
+      border-radius: 5px;
+    }
+    label {
+      color: #07576c;
+    }
+  }
+}
+
+footer {
+  height: 10vh;
+  width: 80%;
+  margin: auto;
+  @include flex(justify-content, center, column);
+
+  img {
+    margin-top: 3.5rem;
+    width: 25rem;
+  }
+  //h5 {
+  //  font-size: $header6;
+  //  font-weight: lighter;
+  //  margin: 10rem 0 5rem 0;
+  //}
+}

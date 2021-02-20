@@ -1,0 +1,160 @@
+body {
+  background: #f2f2f2;
+  animation: opening 1s ease-in-out;
+}
+
+nav {
+  @include flex(space-between, center, row);
+  min-height: 20vh;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+  .logo {
+    @include flex(flex-start, center, row);
+    flex: 1 1 40rem;
+    img {
+      width: 2.5rem;
+    }
+  }
+  ul {
+    @include flex(space-around, center, row);
+    flex: 2 1 60rem;
+    li {
+      margin: 2rem;
+    }
+  }
+}
+
+.intro {
+  min-height: 100vh;
+  width: 80%;
+  margin: auto;
+  margin-top: 10rem;
+  flex-wrap: wrap;
+  @include flex(space-between, center, row);
+}
+
+.intro-text {
+  @include flex(space-between, center, row);
+}
+
+.intro-text {
+  width: 100%;
+}
+.hello {
+  width: 30rem;
+}
+
+.empty-box {
+  @include flex(flex-start, center, row);
+  flex: 0.7 1 10rem;
+}
+
+.text {
+  @include flex(space-around, center, column);
+  flex: 1 1 40rem;
+  .hello {
+    margin-right: 30rem;
+  }
+  h3 {
+    margin-top: 1rem;
+    font-size: $header1;
+    font-weight: 500;
+  }
+}
+
+.intro-image {
+  width: 100%;
+  img {
+    width: 100%;
+    margin-top: 5rem;
+  }
+}
+
+.social {
+  @include flex(flex-end, center, row);
+  width: 100%;
+  img {
+    width: 4rem;
+    margin: 1rem 0 0 1rem;
+  }
+}
+
+.active {
+  background: #07576c;
+  color: #f2f2f2;
+  border-radius: 0.3rem;
+  padding: 1rem 2rem;
+}
+
+footer {
+  height: 10vh;
+  width: 80%;
+  margin: auto;
+  @include flex(justify-content, center, column);
+
+  img {
+    width: 25rem;
+  }
+  //h5 {
+  //  font-size: $header6;
+  //  font-weight: lighter;
+  //  margin: 10rem 0 5rem 0;
+  //}
+}
+
+//keyframes//
+#hello {
+  animation: hello 1s ease infinite alternate;
+}
+
+@keyframes hello {
+  from {
+    transform: rotateZ(-5deg);
+  }
+
+  to {
+    transform: rotateZ(0deg);
+  }
+}
+
+@media screen and (max-width: 1413px) {
+  html {
+    font-size: 53%;
+  }
+  .main-head {
+    width: 100%;
+  }
+  nav {
+    .logo {
+      @include flex(center, center, column);
+      flex: 1 1 40rem;
+    }
+    ul {
+      flex: 2 1 60rem;
+    }
+  }
+}
+
+@media screen and (max-width: 849px) {
+  .logo {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 455px) {
+  html {
+    font-size: 35%;
+  }
+  .intro-image {
+    @include flex(center, center, row);
+  }
+  .intro-image img {
+    width: 120%;
+    rotate: 90deg;
+  }
+  .social {
+    @include flex(center, center, row);
+  }
+}
