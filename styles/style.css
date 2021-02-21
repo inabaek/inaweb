@@ -601,6 +601,7 @@ footer img {
 
 .form-section form {
   padding: 3rem 10rem;
+  background: #f3f4ed;
   border: solid #07576c 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -620,17 +621,18 @@ footer img {
 
 .form-section form input,
 .form-section form textarea {
-  background-color: #ff6441;
-  color: #f2f2f2;
+  background-color: #fcdc32;
+  color: black;
   margin: 2rem;
   padding: 1rem 2rem;
-  border: none;
+  border: 5px solid #07576c;
   border-radius: 5px;
 }
 
 .form-section form input:focus,
 .form-section form textarea:focus {
-  outline: 5px solid #07576c;
+  background: #07576c;
+  color: #f3f4ed;
 }
 
 .form-section form textarea {
@@ -642,8 +644,8 @@ footer img {
   width: 100%;
   padding: 1rem;
   border: none;
-  background-color: #ff6441;
-  color: #07576c;
+  background-color: #07576c;
+  color: #fcdc32;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
@@ -653,13 +655,7 @@ footer img {
 .form-section form button:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
-  background-color: #07576c;
-  color: #ff6441;
   border-radius: 5px;
-}
-
-.form-section form label {
-  color: #07576c;
 }
 
 footer {
