@@ -14,13 +14,27 @@ nav {
     flex: 1 1 40rem;
     img {
       width: 2.5rem;
+      transition: all 0.2s ease;
+    }
+    img:hover {
+      transform: scale(1.3);
     }
   }
   ul {
     @include flex(space-around, center, row);
     flex: 2 1 60rem;
-    li {
-      margin: 2rem;
+    a {
+      padding: 5rem;
+      transition: all 0.2s ease;
+    }
+    a:hover {
+      color: #07576c;
+    }
+    .active {
+      background: url(../images/menu_box.png);
+      background-size: 200%;
+      background-repeat: no-repeat;
+      background-position: -13% 50%;
     }
   }
 }
@@ -80,13 +94,6 @@ nav {
   }
 }
 
-.active {
-  background: #07576c;
-  color: #f2f2f2;
-  border-radius: 0.3rem;
-  padding: 1rem 2rem;
-}
-
 footer {
   height: 10vh;
   width: 80%;
@@ -143,7 +150,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 455px) {
+@media screen and (max-width: 414px) {
   html {
     font-size: 35%;
   }
@@ -152,7 +159,7 @@ footer {
   }
   .intro-image img {
     width: 120%;
-    rotate: 90deg;
+    transform: rotate(90deg);
   }
   .social {
     @include flex(center, center, row);

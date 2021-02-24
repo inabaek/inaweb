@@ -2,24 +2,30 @@
   min-height: 80vh;
   @include flex(center, center, row);
   margin-top: 3rem;
+
   form {
     padding: 3rem 10rem;
     background: #f3f4ed;
-    border: solid #07576c 5px;
+    border: solid rgba(96, 143, 145, 0.24) 5px;
     @include flex(center, center, column);
-    border-radius: 2rem;
+    border-radius: 5px;
+
+    label {
+      color: rgba(0, 0, 0, 0.61);
+    }
 
     input,
     textarea {
-      background-color: #fcdc32;
-      color: black;
+      background-color: #f3f4ed;
+      color: rgba(0, 0, 0, 0.61);
       margin: 2rem;
       padding: 1rem 2rem;
-      border: 5px solid #07576c;
+      border: 5px solid rgba(96, 143, 145, 0.24);
+      transition: all 0.2s ease;
       border-radius: 5px;
       &:focus {
-        background: #07576c;
-        color: #f3f4ed;
+        background: rgba(96, 143, 145, 0.24);
+        color: rgba(96, 143, 145, 0.966);
       }
     }
     textarea {
@@ -30,14 +36,17 @@
       width: 100%;
       padding: 1rem;
       border: none;
-      background-color: #07576c;
-      color: #fcdc32;
-      transition: all 0.2s ease-in-out;
+      background-color: rgba(96, 143, 145, 0.24);
+      color: rgba(0, 0, 0, 0.61);
+      transition: all 0.2s ease;
       cursor: pointer;
+
       border-radius: 5px;
     }
     button:hover {
       transform: scale(1.05);
+      background: #07576c;
+      color: #f3f4ed;
       border-radius: 5px;
     }
   }
