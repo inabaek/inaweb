@@ -146,10 +146,7 @@ nav ul a:hover {
 }
 
 nav ul .active {
-  background: url(../images/menu_box.png);
-  background-size: 200%;
-  background-repeat: no-repeat;
-  background-position: -13% 50%;
+  color: #07576c;
 }
 
 .intro {
