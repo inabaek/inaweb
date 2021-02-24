@@ -23,8 +23,10 @@ nav {
   ul {
     @include flex(space-around, center, row);
     flex: 2 1 60rem;
+    li {
+      @include flex(center, center, row);
+    }
     a {
-      padding: 5rem;
       transition: all 0.2s ease;
     }
     a:hover {

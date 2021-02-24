@@ -120,8 +120,23 @@ nav ul {
           flex: 2 1 60rem;
 }
 
+nav ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 nav ul a {
-  padding: 5rem;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
