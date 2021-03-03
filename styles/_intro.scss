@@ -90,6 +90,10 @@ nav {
   img {
     width: 4rem;
     margin: 1rem 0 0 1rem;
+    transition: all 0.2s ease;
+  }
+  img:hover {
+    transform: scale(1.2);
   }
 }
 

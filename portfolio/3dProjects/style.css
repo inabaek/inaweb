@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  background: #f2f2f2;
+}
+
+nav {
+  height: 10vh;
+  position: relative;
+}
+
+.nav-Links li a {
+  color: #f3f4ed;
+  text-decoration: none;
+  font-size: 2rem;
+  transition: all 0.2s ease-in;
+}
+
+.nav-Links li a:hover {
+  color: #fcdc32;
+}
+
+.hamburger {
+  cursor: pointer;
+  position: absolute;
+  transform: translate(-5%, -50%);
+  z-index: 2;
+  position: -webkit-sticky;
+  position: fixed;
+  top: 6%;
+  right: 3%;
+}
+
+.line {
+  width: 30px;
+  height: 3px;
+  margin: 5px;
+  background: #f44d28;
+  transition: all 0.2s ease;
+}
+.nav-Links {
+  display: flex;
+  list-style: none;
+  width: 50%;
+  height: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: auto;
+  position: fixed;
+  background-color: #07576c;
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  clip-path: circle(100px at 100% -30%);
+  -webkit-clip-path: circle(100px at 100% -20%);
+  transition: all 0.7s ease-out;
+  pointer-events: none;
+  z-index: 1;
+}
+.nav-Links.open {
+  clip-path: circle(2500px at 90% -10%);
+  -webkit-clip-path: circle(2500px at 90% -10%);
+  pointer-events: all;
+}
+
+.nav-Links li {
+  opacity: 0;
+}
+
+.nav-Links li:nth-child(1) {
+  transition: all 0.5s ease 0.2s;
+}
+.nav-Links li:nth-child(2) {
+  transition: all 0.5s ease 0.3s;
+}
+.nav-Links li:nth-child(3) {
+  transition: all 0.5s ease 0.4s;
+}
+li.fade {
+  opacity: 1;
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-6px, 5px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-6px, -5px);
+}
+
+/* grid section */
+.grid {
+  width: 90%;
+  margin: auto;
+}
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.box {
+  height: 20rem;
+  width: 30rem;
+  margin-top: 4rem;
+  position: relative;
+}
+
+.box1 {
+  order: 1;
+  background: url(/images/3d/1.dwelling/7.jpg);
+  background-size: cover;
+  background-color: #f2f2f2;
+  opacity: 0.8;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.box1:hover {
+  opacity: 1;
+}
+
+.box2 {
+  order: 2;
+  background: url(/images/3d/2.room_design/1.png);
+  background-size: cover;
+  background-color: #f2f2f2;
+  opacity: 0.8;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.box2:hover {
+  opacity: 1;
+}
+
+.box3 {
+  order: 3;
+  background: url(/images/3d/3.roha-music/1.png);
+  background-size: cover;
+  background-color: #f2f2f2;
+  opacity: 0.8;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.box3:hover {
+  opacity: 1;
+}
+
+.box4 {
+  order: 4;
+  background: url(/images/3d/4.kiosk/수정01.png);
+  background-size: cover;
+  background-color: #f2f2f2;
+  opacity: 0.8;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.box4:hover {
+  opacity: 1;
+}
+
+.box5 {
+  order: 5;
+  background: url(/images/3d/5.shlter_room/1bedroom_flat_topview.jpg);
+  background-size: cover;
+  background-color: #f2f2f2;
+  opacity: 0.8;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.box5:hover {
+  opacity: 1;
+}
+
+.box6 {
+  order: 6;
+  background: url(/images/3d/6.tower_house/1_original.png);
+  background-size: cover;
+  background-color: #f2f2f2;
+  opacity: 0.8;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.box6:hover {
+  opacity: 1;
+}
+
+.box7 {
+  order: 7;
+  background: url(/images/3d/7.midland/1.png);
+  background-size: cover;
+  background-color: #f2f2f2;
+  opacity: 0.8;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.box7:hover {
+  opacity: 1;
+}
+
+h1 {
+  font-size: 14px;
+  font-weight: lighter;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(0%, 100%);
+  text-align: center;
+  color: #f44d28;
+}
+mark {
+  background: #07586c85;
+  color: #f3f4ed;
+}
+
+/* footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem;
+}
+
+footer img {
+  width: 15rem;
+}
+
+@media screen and (max-width: 540px) {
+  html {
+    font-size: 35%;
+  }
+}

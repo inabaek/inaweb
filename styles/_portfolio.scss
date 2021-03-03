@@ -22,72 +22,112 @@
 }
 
 .line-inside {
-  width: 80%;
-  margin-left: 10%;
+  width: 95%;
+  margin-left: 2.5%;
   border: 0.01vw solid rgba(96, 143, 145, 0.24);
   position: absolute;
 }
 
-.projects {
+.projects_website {
   width: 80%;
   margin: auto;
-  min-height: 60vh;
   @include flex(center, center, row);
   text-align: center;
   margin-top: 20px;
+  margin-bottom: 20rem;
   flex-wrap: wrap;
   h2 {
-    margin: 5rem 1rem 1rem 1rem;
     font-size: $header4;
     font-family: "arial", sans-serif;
     font-weight: 100;
     color: rgba(0, 0, 0, 0.61);
   }
   h3 {
-    margin-bottom: 2rem;
     font-size: $header5;
     font-family: "arial", sans-serif;
     font-weight: 100;
     color: rgba(0, 0, 0, 0.61);
+    margin-top: 0.5rem;
   }
 
   img {
-    margin-bottom: 5rem;
     width: 45rem;
-    margin: 0 1rem 0 1rem;
+    margin: 6rem 2rem 2rem 2rem;
     transition: all 0.2s ease-in-out;
+    cursor: pointer;
   }
   img:hover {
     transform: scale(1.05);
   }
 }
 
-.projects02 {
+.projects_3d {
   width: 80%;
   margin: auto;
-  min-height: 40vh;
   @include flex(center, center, row);
   text-align: center;
-  margin-top: 20px;
   flex-wrap: wrap;
   h2 {
-    margin: 5rem 1rem 1rem 1rem;
     font-size: $header4;
     font-family: "arial", sans-serif;
     font-weight: 100;
     color: rgba(0, 0, 0, 0.61);
   }
   h3 {
-    margin-bottom: 2rem;
+    font-size: $header5;
+    font-family: "arial", sans-serif;
+    font-weight: 100;
+    margin-top: 0.5rem;
+    color: rgb(68, 73, 73);
+  }
+  img {
+    width: 45rem;
+    margin: 6rem 2rem 2rem 2rem;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  img:hover {
+    transform: scale(1.05);
+  }
+}
+
+.view3dprojects {
+  @include flex(center, flex-start, row);
+  button {
+    border: none;
+    background-color: #07576c;
+    color: #f2f2f2;
+    cursor: pointer;
+    margin: 3rem 0 20rem 0;
+    padding: 2rem 5rem;
+    transition: all 0.2s ease-in-out;
+  }
+  button:hover {
+    transform: scale(1.05);
+  }
+}
+
+.projects_deinebyina {
+  width: 80%;
+  margin: auto;
+  @include flex(center, center, row);
+  text-align: center;
+  flex-wrap: wrap;
+  h2 {
+    font-size: $header4;
+    font-family: "arial", sans-serif;
+    font-weight: 100;
+    color: rgba(0, 0, 0, 0.61);
+  }
+  h3 {
     font-size: $header5;
     font-family: "arial", sans-serif;
     font-weight: 100;
     color: rgb(68, 73, 73);
   }
   img {
-    margin-bottom: 5rem;
     width: 45rem;
-    margin: 0 1rem 0 1rem;
+    margin: 6rem 2rem 2rem 2rem;
   }
 }
 
