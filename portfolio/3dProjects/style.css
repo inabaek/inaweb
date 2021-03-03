@@ -154,8 +154,9 @@ li.fade {
 
 .box4 {
   order: 4;
-  background: url(/images/3d/4.kiosk/2.png);
+  background: url(/images/3d/4.kiosk/수정01.png);
   background-size: cover;
+  background-color: #f2f2f2;
   opacity: 0.8;
   transition: all 0.2s ease;
   cursor: pointer;
