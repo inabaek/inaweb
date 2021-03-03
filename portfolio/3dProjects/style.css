@@ -153,14 +153,15 @@ li.fade {
 }
 
 .box4 {
-  order: 4;
-  background: url(/images/3d/4.kiosk/2.png);
+  order: 3;
+  background: url(/images/3d/3.roha-music/1.png);
   background-size: cover;
+  background-color: #f2f2f2;
   opacity: 0.8;
   transition: all 0.2s ease;
   cursor: pointer;
 }
-.box4:hover {
+.box3:hover {
   opacity: 1;
 }
 
