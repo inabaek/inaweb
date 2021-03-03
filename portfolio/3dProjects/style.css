@@ -152,16 +152,15 @@ li.fade {
   opacity: 1;
 }
 
-.box4 {
-  order: 4;
-  background: url(/images/3d/4.kiosk/1.jpg);
+.box5 {
+  order: 5;
+  background: url(/images/3d/5.shlter_room/1bedroom_flat_topview.jpg);
   background-size: cover;
-  background-color: #f2f2f2;
   opacity: 0.8;
   transition: all 0.2s ease;
   cursor: pointer;
 }
-.box4:hover {
+.box5:hover {
   opacity: 1;
 }
 
