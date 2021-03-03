@@ -156,11 +156,9 @@ li.fade {
   order: 4;
   background: url(/images/3d/4.kiosk/3.png);
   background-size: cover;
-  background-color: #f2f2f2;
   opacity: 0.8;
   transition: all 0.2s ease;
   cursor: pointer;
-  z-index: 1;
 }
 .box4:hover {
   opacity: 1;
