@@ -237,9 +237,10 @@ nav ul .active {
 }
 
 .text h3 {
-  margin-top: 1rem;
+  margin-top: 2rem;
   font-size: 2.5rem;
-  font-weight: 500;
+  font-weight: 400;
+  line-height: 150%;
 }
 
 .intro-image {
