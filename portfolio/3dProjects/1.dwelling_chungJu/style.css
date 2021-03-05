@@ -110,7 +110,7 @@ li.fade {
   position: relative;
   height: 70vh;
   width: 70%;
-  margin: 5rem auto;
+  margin: 2rem auto 0rem auto;
 }
 
 .carousel__image {
@@ -193,20 +193,23 @@ li.fade {
   display: none;
 }
 
-.project-name {
-  text-align: center;
-  color: #07586c85;
-  font-size: 2vw;
-  position: absolute;
-  top: 13%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.project-description {
+  width: 64%;
+  margin: auto;
+  font-family: "Poppins", sans-serif;
+  color: #07586c96;
+  text-align: start;
 }
 
-.project-description {
-  text-align: center;
-  margin-top: 5rem;
-  font-size: 1vw;
+.project-description h1 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+.project-description h2 {
+  margin-top: 0.1rem;
+  font-size: 1rem;
+  font-weight: lighter;
+  line-height: 1.5rem;
 }
 
 /* footer */
