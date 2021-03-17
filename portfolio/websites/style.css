@@ -106,8 +106,7 @@ li.fade {
   transform: rotate(45deg) translate(-6px, -5px);
 }
 /* Website */
-/* Jison.html */
-.jison-detailPage {
+.slide {
   display: flex;
   width: 80%;
   margin: 0 auto 0 auto;
@@ -132,7 +131,7 @@ li.fade {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+
   flex: 1;
   flex-basis: 25rem;
   padding-left: 5rem;
@@ -149,12 +148,13 @@ li.fade {
   align-self: flex-start;
   cursor: pointer;
 }
-.jison-detailPage h2 {
+.slide h2 {
   font-family: "Abril Fatface";
   font-size: 5rem;
+  text-align: start;
 }
 
-.jison-detailPage p {
+.slide p {
   padding: 3rem 0rem;
   font-size: 1.5rem;
   color: black;
